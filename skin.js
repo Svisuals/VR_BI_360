@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.0.4/19982
 // Filename: 1r_orb.ggsk
-// Generated 2024-06-22T10:26:28
+// Generated 2024-06-22T10:40:06
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -15272,569 +15272,6 @@ alert("The current view has been copied.");
 		me._local_fonts.ggUpdatePosition=function (useTransition) {
 		}
 		me.divSkin.appendChild(me._local_fonts);
-		el=me._rectangle_12=document.createElement('div');
-		el.ggId="Rectangle 1";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : #ff0000;';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 130px;';
-		hs+='left : 0px;';
-		hs+='position : absolute;';
-		hs+='top : -1px;';
-		hs+='visibility : inherit;';
-		hs+='width : 145px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.setAttribute('tabindex', '-1');
-		el.style.transformOrigin='50% 50%';
-		me._rectangle_12.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._rectangle_12.logicBlock_tabindex = function() {
-			var newLogicStateTabIndex;
-			if (
-				((player.getVariableValue('kb_accessibility') == false)) || 
-				((me.hotspot.pxp < 5)) || 
-				((me.hotspot.pxp > 95)) || 
-				((me.hotspot.pyp < 5)) || 
-				((me.hotspot.pyp > 95))
-			)
-			{
-				newLogicStateTabIndex = 0;
-			}
-			else {
-				newLogicStateTabIndex = -1;
-			}
-			if (me._rectangle_12.ggCurrentLogicStateTabIndex != newLogicStateTabIndex) {
-				me._rectangle_12.ggCurrentLogicStateTabIndex = newLogicStateTabIndex;
-				me._rectangle_12.style.transition='';
-				if (me._rectangle_12.ggCurrentLogicStateTabIndex == 0) {
-					me._rectangle_12.setAttribute('tabindex', '-1');
-				}
-				else {
-					me._rectangle_12.setAttribute('tabindex', '-1');
-				}
-			}
-		}
-		me._rectangle_12.logicBlock_tabindex();
-		me._rectangle_12.onclick=function (e) {
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == false)) || 
-					((player.getVariableValue('resp_phone') == true))
-				)
-			) {
-				player.openUrl("https:\/\/web.connect.trimble.com\/projects\/6RE4ShEbOVg\/todo","");
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_title.ggUpdateText=function() {
-						var params = [];
-						params.push(player._(String(player.hotspot.title)));
-						var hs = player._("%1", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_title.ggUpdateText();
-				me._url_popup_title.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_iframe.ggUpdateText=function() {
-						var params = [];
-						var hs = player._("<iframe src=\"https:\/\/web.connect.trimble.com\/projects\/6RE4ShEbOVg\/todo\" width=\"100%\" height=\"100%\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder= \"0\" ><\/iframe>", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_iframe.ggUpdateText();
-				me._url_popup_iframe.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-				player.setVariableValue('vis_url_popup', true);
-			}
-			player.setVariableValue('vis_info_popup', false);
-			player.setVariableValue('vis_image_popup', false);
-			player.setVariableValue('vis_pdf_popup', false);
-			player.setVariableValue('vis_video_popup', false);
-			player.setVariableValue('vis_floorplan', false);
-			player.setVariableValue('vis_info', false);
-			player.setVariableValue('vis_share', false);
-			player.setVariableValue('vis_languages', false);
-		}
-		me._rectangle_12.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._rectangle_12);
-		el=me._rectangle_11=document.createElement('div');
-		el.ggId="Rectangle 1";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : #0055ff;';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 130px;';
-		hs+='left : 163px;';
-		hs+='position : absolute;';
-		hs+='top : -6px;';
-		hs+='visibility : inherit;';
-		hs+='width : 145px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		me._rectangle_11.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._rectangle_11.onclick=function (e) {
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == false)) || 
-					((player.getVariableValue('resp_phone') == true))
-				)
-			) {
-				player.openUrl("https:\/\/copilot.microsoft.com\/?wlexpsignin=1","");
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_title.ggUpdateText=function() {
-						var params = [];
-						params.push(player._(String(player.hotspot.title)));
-						var hs = player._("%1", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_title.ggUpdateText();
-				me._url_popup_title.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_iframe.ggUpdateText=function() {
-						var params = [];
-						var hs = player._("<iframe src=\"https:\/\/copilot.microsoft.com\/?wlexpsignin=1\" width=\"100%\" height=\"100%\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder= \"0\" ><\/iframe>", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_iframe.ggUpdateText();
-				me._url_popup_iframe.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-				player.setVariableValue('vis_url_popup', true);
-			}
-			player.setVariableValue('vis_info_popup', false);
-			player.setVariableValue('vis_image_popup', false);
-			player.setVariableValue('vis_pdf_popup', false);
-			player.setVariableValue('vis_video_popup', false);
-			player.setVariableValue('vis_floorplan', false);
-			player.setVariableValue('vis_info', false);
-			player.setVariableValue('vis_share', false);
-			player.setVariableValue('vis_languages', false);
-		}
-		me._rectangle_11.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._rectangle_11);
-		el=me._rectangle_10=document.createElement('div');
-		el.ggId="Rectangle 1";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : #ddff30;';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 130px;';
-		hs+='left : 347px;';
-		hs+='position : absolute;';
-		hs+='top : -9px;';
-		hs+='visibility : inherit;';
-		hs+='width : 145px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		me._rectangle_10.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._rectangle_10.onclick=function (e) {
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == false)) || 
-					((player.getVariableValue('resp_phone') == true))
-				)
-			) {
-				player.openUrl("https:\/\/svisuals.github.io\/LancamentoBrooklynBrigde\/","");
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_title.ggUpdateText=function() {
-						var params = [];
-						params.push(player._(String(player.hotspot.title)));
-						var hs = player._("%1", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_title.ggUpdateText();
-				me._url_popup_title.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_iframe.ggUpdateText=function() {
-						var params = [];
-						var hs = player._("<iframe src=\"https:\/\/svisuals.github.io\/LancamentoBrooklynBrigde\/\" width=\"100%\" height=\"100%\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder= \"0\" ><\/iframe>", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_iframe.ggUpdateText();
-				me._url_popup_iframe.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-				player.setVariableValue('vis_url_popup', true);
-			}
-			player.setVariableValue('vis_info_popup', false);
-			player.setVariableValue('vis_image_popup', false);
-			player.setVariableValue('vis_pdf_popup', false);
-			player.setVariableValue('vis_video_popup', false);
-			player.setVariableValue('vis_floorplan', false);
-			player.setVariableValue('vis_info', false);
-			player.setVariableValue('vis_share', false);
-			player.setVariableValue('vis_languages', false);
-		}
-		me._rectangle_10.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._rectangle_10);
-		el=me._rectangle_1=document.createElement('div');
-		el.ggId="Rectangle 1";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : #aa00ff;';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 130px;';
-		hs+='left : 520px;';
-		hs+='position : absolute;';
-		hs+='top : -3px;';
-		hs+='visibility : inherit;';
-		hs+='width : 145px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		me._rectangle_1.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._rectangle_1.onclick=function (e) {
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == false)) || 
-					((player.getVariableValue('resp_phone') == true))
-				)
-			) {
-				player.openUrl("https:\/\/chat.openai.com\/c\/40b2f2d2-00f9-4441-97cc-c62dfdd454ad","");
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_title.ggUpdateText=function() {
-						var params = [];
-						params.push(player._(String(player.hotspot.title)));
-						var hs = player._("%1", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_title.ggUpdateText();
-				me._url_popup_title.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-					me._url_popup_iframe.ggUpdateText=function() {
-						var params = [];
-						var hs = player._("<iframe src=\"https:\/\/chat.openai.com\/c\/40b2f2d2-00f9-4441-97cc-c62dfdd454ad\" width=\"100%\" height=\"100%\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder= \"0\" ><\/iframe>", params);
-						if (hs!=this.ggText) {
-							this.ggText=hs;
-							this.ggTextDiv.innerHTML=hs;
-							if (this.ggUpdatePosition) this.ggUpdatePosition();
-						}
-					}
-				me._url_popup_iframe.ggUpdateText();
-				me._url_popup_iframe.ggTextDiv.scrollTop = 0;
-			}
-			if (
-				(
-					((player.getVariableValue('opt_url_popup') == true)) && 
-					((player.getVariableValue('resp_phone') == false))
-				)
-			) {
-				player.setVariableValue('vis_url_popup', true);
-			}
-			player.setVariableValue('vis_info_popup', false);
-			player.setVariableValue('vis_image_popup', false);
-			player.setVariableValue('vis_pdf_popup', false);
-			player.setVariableValue('vis_video_popup', false);
-			player.setVariableValue('vis_floorplan', false);
-			player.setVariableValue('vis_info', false);
-			player.setVariableValue('vis_share', false);
-			player.setVariableValue('vis_languages', false);
-		}
-		me._rectangle_1.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._rectangle_1);
-		el=me._rectangle_20=document.createElement('div');
-		el.ggId="Rectangle 2";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : #550000;';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 100px;';
-		hs+='left : 218px;';
-		hs+='position : absolute;';
-		hs+='top : 367px;';
-		hs+='visibility : inherit;';
-		hs+='width : 100px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		me._rectangle_20.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._rectangle_20.onclick=function (e) {
-			// Verificar si el cuadro de texto ya existe
-var inputTexto = document.getElementById('miInputTexto');
-
-// Si el cuadro de texto ya existe, lo eliminamos
-if (inputTexto) {
-    inputTexto.remove();
-}
-
-// Crear un contenedor para el cuadro de texto
-var contenedor = document.createElement('div');
-contenedor.style.position = 'absolute';
-contenedor.style.width = '400px'; // Ancho del cuadro de texto
-contenedor.style.height = '400px'; // Alto del cuadro de texto
-contenedor.style.top = '50%';
-contenedor.style.left = '50%';
-contenedor.style.transform = 'translate(-50%, -50%)';
-contenedor.style.backgroundColor = '#ffffff'; // Color de fondo del cuadro de texto
-contenedor.style.border = '1px solid #000000'; // Borde del cuadro de texto
-contenedor.style.padding = '10px'; // Espaciado interno del cuadro de texto
-contenedor.style.zIndex = '9999'; // Asegurar que esté en el frente
-document.body.appendChild(contenedor);
-
-// Crear el elemento de entrada de texto dentro del contenedor
-inputTexto = document.createElement('textarea');
-inputTexto.id = 'miInputTexto';
-inputTexto.style.width = '100%';
-inputTexto.style.height = '100%';
-inputTexto.style.boxSizing = 'border-box';
-inputTexto.style.border = 'none'; // Quitar borde del cuadro de texto
-inputTexto.style.outline = 'none'; // Quitar contorno del cuadro de texto
-inputTexto.style.backgroundColor = 'transparent'; // Fondo transparente del cuadro de texto
-inputTexto.style.fontSize = '14px'; // Tamaño de fuente del cuadro de texto
-inputTexto.style.resize = 'none'; // Evitar que el usuario pueda redimensionar el cuadro de texto
-inputTexto.style.overflow = 'auto'; // Agregar barra de desplazamiento
-contenedor.appendChild(inputTexto);
-
-// Enfocar el cuadro de texto al abrirlo
-inputTexto.focus();
-
-// Escuchar el evento 'paste' en el cuadro de texto
-inputTexto.addEventListener('paste', function(event) {
-    // Obtener los datos del portapapeles
-    var clipboardData = event.clipboardData || window.clipboardData;
-    if (!clipboardData) return;
-
-    // Verificar si se pegó una imagen
-    if (clipboardData.items) {
-        for (var i = 0; i < clipboardData.items.length; i++) {
-            var item = clipboardData.items[i];
-            if (item.type.indexOf('image') !== -1) {
-                // Crear un objeto URL para la imagen pegada
-                var blob = item.getAsFile();
-                var reader = new FileReader();
-                reader.onload = function(event) {
-                    var imgSrc = event.target.result;
-
-                    // Crear un elemento de imagen y establecer su atributo src
-                    var img = document.createElement('img');
-                    img.src = imgSrc;
-
-                    // Agregar la imagen al cuadro de texto
-                    inputTexto.appendChild(img);
-                };
-                reader.readAsDataURL(blob);
-            }
-        }
-    }
-});
-		}
-		me._rectangle_20.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._rectangle_20);
-		el=me._rectangle_3=document.createElement('div');
-		el.ggId="Rectangle 3";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : #ff5500;';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 20px;';
-		hs+='left : 220px;';
-		hs+='position : absolute;';
-		hs+='top : 481px;';
-		hs+='visibility : inherit;';
-		hs+='width : 100px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		me._rectangle_3.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._rectangle_3.onclick=function (e) {
-			// Verificar si el cuadro de texto ya existe
-var inputTexto = document.getElementById('miInputTexto');
-
-// Si el cuadro de texto ya existe, lo eliminamos
-if (inputTexto) {
-    inputTexto.value = ''; // Eliminar el contenido del cuadro de texto
-}
-
-// Función para eliminar el contenido del cuadro de texto
-function eliminarTexto() {
-    var inputTexto = document.getElementById('miInputTexto');
-    if (inputTexto) {
-        inputTexto.value = ''; // Eliminar el contenido del cuadro de texto
-    }
-}
-		}
-		me._rectangle_3.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._rectangle_3);
-		el=me._rectangle_2=document.createElement('div');
-		el.ggId="Rectangle 2";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : #aaffff;';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 100px;';
-		hs+='left : 427px;';
-		hs+='position : absolute;';
-		hs+='top : 367px;';
-		hs+='visibility : inherit;';
-		hs+='width : 100px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style.transformOrigin='50% 50%';
-		me._rectangle_2.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._rectangle_2.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._rectangle_2);
 		me._menu_left.logicBlock_visible();
 		me._menu_left_slider.logicBlock_position();
 		me._menu_left_slider.logicBlock_visible();
@@ -16034,7 +15471,6 @@ function eliminarTexto() {
 		me._video_url_popup_phone_play_icon.logicBlock_alpha();
 		el = me._local_fonts;
 		;
-		me._rectangle_12.logicBlock_tabindex();
 		player.addListener('activehotspotchanged', function(event) {
 			if (hotspotTemplates.hasOwnProperty('ht_video_youtube')) {
 				for(var i = 0; i < hotspotTemplates['ht_video_youtube'].length; i++) {
@@ -16283,7 +15719,6 @@ function eliminarTexto() {
 			me._video_file_popup_phone_play.logicBlock_visible();
 			me._video_url_popup_phone.logicBlock_visible();
 			me._video_url_popup_phone_play.logicBlock_visible();
-			me._rectangle_12.logicBlock_tabindex();
 		});
 		player.addListener('changevisitednodes', function(event) {
 			for(var i = 0; i < me._node_cloner_phone.ggInstances.length; i++) {
@@ -16561,7 +15996,6 @@ function eliminarTexto() {
 			me._video_file_popup_phone_play.logicBlock_visible();
 			me._video_url_popup_phone.logicBlock_visible();
 			me._video_url_popup_phone_play.logicBlock_visible();
-			me._rectangle_12.logicBlock_tabindex();
 		});
 		player.addListener('fullscreenenter', function(event) {
 			me._fullscreen_off.logicBlock_visible();
@@ -16672,7 +16106,6 @@ function eliminarTexto() {
 					hotspotTemplates['ht_url'][i].ggEvent_hotspotsupdated();
 				}
 			}
-			me._rectangle_12.logicBlock_tabindex();
 		});
 		player.addListener('sizechanged', function(event) {
 			me._variable_resp_desktop.logicBlock();
@@ -16777,7 +16210,6 @@ function eliminarTexto() {
 			me._url_popup_close_btn_active.logicBlock_tabindex();
 			me._sounds_off.logicBlock_tabindex();
 			me._sounds_on.logicBlock_tabindex();
-			me._rectangle_12.logicBlock_tabindex();
 		});
 		player.addListener('varchanged_node_cloner_hasDown', function(event) {
 			me._thumbs_left.logicBlock_visible();
@@ -21848,10 +21280,10 @@ function eliminarTexto() {
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_7 = setInterval(() => {
+				let pdfInterval_15 = setInterval(() => {
 					if (skin._popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_7);
+						clearInterval(pdfInterval_15);
 					}
 				}, 50);
 			}
@@ -21867,10 +21299,10 @@ function eliminarTexto() {
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_8 = setInterval(() => {
+				let pdfInterval_16 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_8);
+						clearInterval(pdfInterval_16);
 					}
 				}, 50);
 			}
